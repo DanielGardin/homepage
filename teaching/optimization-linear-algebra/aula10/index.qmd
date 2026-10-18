@@ -608,7 +608,7 @@ $$T_{\text{grad}} \le 5 \cdot C$$
 # Gráfico comparativo de tempo relativo: Forward vs Reverse
 plt.figure(figsize=(7, 3.8))
 plt.plot(dims, time_forward, label="Modo Forward: $O(d)$", color=COR_B, lw=2.5, marker="o")
-plt.plot(dims, time_reverse, label="Modo Reverse (Baur-Strassen): $\le 5C$ (constante)", color=COR_A, lw=2.5, marker="s")
+plt.plot(dims, time_reverse, label=r"Modo Reverse (Baur-Strassen): $\leq 5C$ (constante)", color=COR_A, lw=2.5, marker="s")
 plt.xlabel("Dimensão dos Parâmetros de Entrada $d$", fontsize=11)
 plt.ylabel("Custo Temporal Relativo (múltiplos de $C_{\text{eval}}$)", fontsize=11)
 plt.title("A Escalabilidade do Modo Reverso: $O(d)$ vs. $O(1)$", fontsize=12, fontweight="bold")
