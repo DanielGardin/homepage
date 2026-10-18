@@ -58,3 +58,7 @@ _site/*
 
 # Materiais de prova e arquivos privados (não devem ir para o Git)
 teaching/**/*_banco_prova*.md
+
+# Cache de treinos das aulas (joblib.Memory em teaching/**/aulaNN/_cache/):
+# local e regenerável; o resultado publicado já fica no _freeze/.
+teaching/**/_cache/
